@@ -239,14 +239,22 @@ function debounce(func, wait, immediate) {
 
 function zalo() {
     Swal.fire({
-        title: 'Nguyễn Hoàng An',
-        text: '0354664688',
+        title: 'Nguyễn Hoàng Yến Nhi',
+        text: '0919682987',
         imageUrl: 'images/zalo.jpg'
     })
 };
 
 function downloadCV() {
-    const { value: password } = Swal.fire({
+    Swal.fire({
+         title: 'Nguyễn Hoàng Yến Nhi',
+         html:
+             `<div>
+             <a href="images/cv.pdf" target="_blank">Download</a> 
+             </div>
+             `,
+     })
+    /*const { value: password } = Swal.fire({
         title: 'Enter your password',
         input: 'password',
         inputLabel: 'Password',
@@ -261,7 +269,7 @@ function downloadCV() {
             if (res.value === "257266") {
                 Swal.fire({
                     icon: 'success',
-                    title: 'Nguyễn Hoàng An',
+                    title: 'Nguyễn Hoàng Yến Nhi',
                     html:
                         `<div>
                         <a href="images/cv.pdf" target="_blank">Download</a> 
@@ -282,5 +290,5 @@ function downloadCV() {
             }
            
         }
-    })
+    })*/
 };
